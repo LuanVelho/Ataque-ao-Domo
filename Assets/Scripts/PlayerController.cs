@@ -5,7 +5,9 @@ using System.Collections.Generic;
 public class PlayerController : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    public float moveSpeed = 5f;
+    public float moveSpeed;
+    public float walkingSpeed = 5f;
+    public float runningSpeed = 15f;
     public Rigidbody2D rb;
     public Weapon weapon;
 
@@ -17,6 +19,15 @@ public class PlayerController : MonoBehaviour
     {
         float moveX = Input.GetAxisRaw("Horizontal");
         float moveY = Input.GetAxisRaw("Vertical");
+
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            moveSpeed = runningSpeed;
+        }
+        if (Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            moveSpeed = walkingSpeed;
+        }
 
         if (Input.GetMouseButtonDown(0))
         {
