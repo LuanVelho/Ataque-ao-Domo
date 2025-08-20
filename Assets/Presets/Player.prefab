@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2516027997953740605}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: 0.0019036727, w: 0.9999982}
+  m_LocalRotation: {x: -0, y: -0, z: 0.0012528531, w: 0.9999992}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -49,7 +49,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 3
+  m_Intensity: 5
   m_LightVolumeIntensity: 0.5
   m_LightVolumeEnabled: 0
   m_ApplyToSortingLayers: 00000000
@@ -70,10 +70,10 @@ MonoBehaviour:
   m_LocalBounds:
     m_Center: {x: 0, y: -0.00000011920929, z: 0}
     m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
-  m_PointLightInnerAngle: 47.58
-  m_PointLightOuterAngle: 93.69
+  m_PointLightInnerAngle: 17.54
+  m_PointLightOuterAngle: 63.65
   m_PointLightInnerRadius: 1.763109
-  m_PointLightOuterRadius: 4
+  m_PointLightOuterRadius: 9.228679
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
@@ -109,7 +109,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4307517269222102191}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: 0.0040158345, w: 0.99999195}
+  m_LocalRotation: {x: -0, y: -0, z: 0.0032277459, w: 0.9999948}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -157,7 +157,7 @@ MonoBehaviour:
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 1
-  m_PointLightOuterRadius: 2
+  m_PointLightOuterRadius: 3
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
@@ -285,6 +285,7 @@ GameObject:
   - component: {fileID: 7210769119092589191}
   - component: {fileID: 3224962032124589373}
   - component: {fileID: 6409084730669633528}
+  - component: {fileID: 7287734525448903317}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -441,8 +442,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+  walkingSpeed: 5
+  runningSpeed: 15
   rb: {fileID: 3224962032124589373}
   weapon: {fileID: 7511727720235681248}
+--- !u!114 &7287734525448903317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5208871099766388031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7c3d9f632fb8554db46c22bcc67a5c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 0
 --- !u!1 &6533330619890180109
 GameObject:
   m_ObjectHideFlags: 0

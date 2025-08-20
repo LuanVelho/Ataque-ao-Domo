@@ -5,6 +5,7 @@ using System.Collections.Generic;
 public class PlayerController : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+
     public float moveSpeed;
     public float walkingSpeed = 5f;
     public float runningSpeed = 15f;
@@ -15,6 +16,10 @@ public class PlayerController : MonoBehaviour
     Vector2 mousePosition;
 
     // Update is called once per frame
+    void Start()
+    {
+
+    }
     void Update()
     {
         float moveX = Input.GetAxisRaw("Horizontal");
