@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class PlayerHealth : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -22,8 +22,7 @@ public class PlayerHealth : MonoBehaviour
     {
         if (health <= 0)
         {
-            Debug.Log("Player is dead");
-            Destroy(gameObject);
+            SceneManager.LoadScene("Game Over");
             // Add logic for player death, e.g., respawn or game over
         }
     }
